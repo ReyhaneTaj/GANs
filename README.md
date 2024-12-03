@@ -8,7 +8,7 @@ Dataset: Kaggle Credit Card Fraud Detection Dataset
 Overview:
 This project leverages GANs to generate synthetic data for the minority class (fraudulent transactions), addressing class imbalance and improving the performance of fraud detection models.
 2. GANDataBalancer
-The GANDataBalancer class is a powerful and flexible tool designed to handle imbalanced datasets effectively. It:
+The GANDataBalancer class is a flexible tool designed to handle imbalanced datasets effectively. It:
 
 Automatically identifies the minority and majority classes in a dataset.
 Trains a GAN to generate high-quality synthetic data for the minority class.
