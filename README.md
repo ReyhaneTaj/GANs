@@ -1,7 +1,7 @@
 GAN Projects
 A collection of Generative Adversarial Network (GAN) projects for various applications, including fraud detection, image generation, and more.
 
-Projects
+Projects in this repository
 1. Fraud Detection with GANs
 Code and Notebook
 Dataset: Kaggle Credit Card Fraud Detection Dataset
