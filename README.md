@@ -1,5 +1,5 @@
 GAN Projects
-A collection of Generative Adversarial Network (GAN) projects for various applications, including fraud detection, image generation, and more.
+My Generative Adversarial Network (GAN) projects for various applications, including fraud detection, image generation, and more.
 
 Projects in this repository
 1. Fraud Detection with GANs
