@@ -1,4 +1,5 @@
-#GAN Projects
+GAN Projects
+
 My Generative Adversarial Network (GAN) projects for various applications, including fraud detection, image generation, and more.
 
 Projects in this repository
