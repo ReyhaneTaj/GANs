@@ -14,4 +14,4 @@ Features
 -Synthetic Data Generation: Generates realistic synthetic samples for the minority class using GANs.
 -Class Balancing: Combines real and synthetic data to balance class distribution.
 -End-to-End Workflow: Includes functionality for training the GAN and resampling the dataset in one step.
--Customizable Parameters: Adjustable sampling strategy, latent dimensions, batch size, and epochs.
+-Customizable Parameters: Adjustable sampling strategy, latent dimensions, learning rate, batch size, and epochs.
