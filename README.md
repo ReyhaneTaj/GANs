@@ -12,6 +12,7 @@ This project leverages GANs to generate synthetic data for the minority class (f
 The GANDataBalancer class is a flexible tool designed to handle imbalanced datasets effectively.
 
 Features
+
 -Synthetic Data Generation: Generates realistic synthetic samples for the minority class using GANs.
 -Class Balancing: Combines real and synthetic data to balance class distribution.
 -End-to-End Workflow: Includes functionality for training the GAN and resampling the dataset in one step.
