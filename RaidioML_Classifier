@@ -1,0 +1,34 @@
+### Signal Classification and Feature Extraction Using RML2016.10a Dataset
+
+#### Dataset Overview
+
+The dataset used is **RML2016.10a**. It contains modulated signals with varying Signal-to-Noise Ratios (SNR) and modulation types, represented as keys in a dictionary format.
+
+- **Keys**: (Modulation type, SNR)
+- **Signal Data**: Each key maps to a NumPy array of signal samples, with shape `(num_samples, 2, 128)` representing in-phase (I) and quadrature (Q) components.
+### Summary of Actions in the Notebook
+
+#### Dataset Exploration
+- Inspected the **RML2016.10a** dataset structure.
+- Visualized I/Q signal components for sample signals.
+
+#### Approach 1: Raw Signal Classification
+- Filtered signals with `SNR == 0`.
+- Preprocessed raw signals to shape `(num_samples, 128, 2)` for 1D-CNN.
+- Defined and trained a 1D-CNN with three convolutional layers.
+- Achieved test accuracy of **~75-77%**.
+- Experimented with adding four additional features (e.g., mean amplitude), which reduced test accuracy to **68%**.
+
+#### Approach 2: Feature-Based Classification
+- Extracted 15+ features, including:
+  - **Time-domain features**: Amplitude envelope, signal energy, zero-crossing rate.
+  - **Frequency-domain features**: Dominant frequency, spectral entropy, bandwidth.
+  - **Phase-domain features**: Instantaneous phase, phase transitions.
+  - **Statistical features**: Mean, variance, skewness, kurtosis.
+  - **Constellation features**: Constellation points, inter-point distances.
+- Mapped signals to feature vectors.
+- Evaluated classification performance using a Random Forest Classifier.
+
+#### Key Results
+- Raw signal classification using a 1D-CNN achieved high accuracy, while adding features disrupted performance.
+- Feature-based classification provided interpretable insights with competitive results using a simpler model.
